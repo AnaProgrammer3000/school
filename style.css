@@ -1790,10 +1790,6 @@ body .teachers .teachers__slider__bottom__card {
     width: 100%;
 }
 
-.direction__group.last {
-    width: 200px;
-}
-
 footer {
     position: relative;
     padding: 65px 0 0 0;
@@ -1956,4 +1952,41 @@ footer::before {
     line-height: 18px;
     text-decoration: underline;
     display: block;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.select-wrap {
+    position: relative;
+}
+
+.select-nav {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+}
+
+.arrow-up, .arrow-down {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.arrow-up.last, .arrow-down.last {
+    opacity: 0.5;
+}
+
+.select-wrap.w100 {
+    width: 200px;
+}
+
+.select-wrap .arrow-up {
+    background: url("/school/img/arrow-up.svg") no-repeat center;
+}
+
+.select-wrap .arrow-down {
+    background: url("/school/img/arrow-dw.svg") no-repeat center;
 }

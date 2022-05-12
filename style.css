@@ -1,0 +1,1959 @@
+@font-face {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/school/fonts/KoskoRegular-Regular.woff2') format('woff2'),
+        url('/school/fonts/KoskoRegular-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/school/fonts/KoskoBold-Bold.woff2') format('woff2'),
+        url('/school/fonts/KoskoBold-Bold.woff') format('woff');
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/school/fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'),
+        url('/school/fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff');
+}
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('/school/fonts/roboto-v29-latin_cyrillic-500.woff2') format('woff2'),
+        url('/school/fonts/roboto-v29-latin_cyrillic-500.woff') format('woff');
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-regular.woff2') format('woff2'),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-regular.woff') format('woff');
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-700.woff2') format('woff2'),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-700.woff') format('woff');
+}
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-600.woff2') format('woff2'),
+        url('/school/fonts/montserrat-v24-latin_cyrillic-600.woff') format('woff');
+
+}
+
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 0;
+}
+
+.btn {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 54px;
+    padding: 15px 35px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    filter: brightness(1);
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btn.yellow {
+    background: #FBCE78;
+}
+
+.btn.coral {
+    background: #FFA083;
+}
+
+.btn.purple {
+    background: #C6A0DE;
+}
+
+.btn.green {
+    background: #9FC57A;
+}
+
+.btn.pink {
+    background: #EEA3B0;
+}
+
+.btn.blue {
+    background: #73D5DC;
+}
+
+.btn.white {
+    background: #fff;
+}
+
+.a-cont {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    padding: 21px 0;
+}
+
+.main__school {
+    margin: 109px 0 -65px 0;
+}
+
+.main__school__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__school__left,
+.main__school__right {
+    position: relative;
+}
+
+.main__school__left .btn {
+    width: 190px;
+
+}
+
+.main__school__title__1 {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.main__school__title__2 {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 94px;
+    color: #799D55;
+    margin: 0 0 22px 0;
+    padding: 0 90px 0 0;
+}
+
+.main__school__desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 30px 0;
+    width: 445px;
+}
+
+.main__school__img {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.cloud__1::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud1.svg) no-repeat center;
+    bottom: 110%;
+    right: 67%;
+    width: 285px;
+    height: 115px;
+    animation: cloud1before linear 3s infinite alternate;
+}
+
+@keyframes cloud1before {
+    from {
+        right: 67%;
+    }
+
+    to {
+        right: 45%;
+    }
+}
+
+.cloud__1::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud1.svg) no-repeat center;
+    top: 90%;
+    right: 0;
+    width: 227px;
+    height: 91px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud1after linear 3s infinite alternate;
+}
+
+@keyframes cloud1after {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 25%;
+    }
+}
+
+.cloud__2::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    bottom: 76%;
+    right: 60%;
+    width: 260px;
+    height: 152px;
+    background-size: contain;
+    animation: cloud2before linear 3s infinite alternate;
+}
+
+@keyframes cloud2before {
+    from {
+        right: 45%;
+    }
+
+    to {
+        right: 67%;
+    }
+}
+
+
+.cloud__2::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    top: 22%;
+    left: 80%;
+    width: 223px;
+    height: 131px;
+    animation: cloud2after linear 3s infinite alternate;
+}
+
+@keyframes cloud2after {
+    from {
+        left: 70%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+
+.cloud__3 {
+    position: relative;
+}
+
+.cloud__3::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud1.svg) no-repeat center;
+    top: 100%;
+    left: 35%;
+    width: 185px;
+    height: 74px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud3before linear 3s infinite alternate;
+}
+
+@keyframes cloud3before {
+    from {
+        left: 40%;
+    }
+
+    to {
+        left: 7%;
+    }
+}
+
+.cloud__3::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    top: 0;
+    left: 55%;
+    width: 157px;
+    height: 93px;
+    background-size: contain;
+    animation: cloud3after linear 3s infinite alternate;
+}
+
+@keyframes cloud3after {
+    from {
+        left: 55%;
+    }
+
+    to {
+        left: 75%;
+    }
+}
+
+.cloud__4::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud1.svg) no-repeat center;
+    top: 50%;
+    left: 20%;
+    width: 227px;
+    height: 91px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud4before linear 3s infinite alternate;
+}
+
+@keyframes cloud4before {
+    from {
+        left: 11%;
+    }
+
+    to {
+        left: 31%;
+    }
+}
+
+.cloud__4::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    top: 45%;
+    left: 45%;
+    width: 84px;
+    height: 47px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud4after linear 3s infinite alternate;
+}
+
+@keyframes cloud4after {
+    from {
+        left: 49%;
+    }
+
+    to {
+        left: 29%;
+    }
+}
+
+
+.cloud__5::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    top: 5%;
+    left: 40%;
+    width: 176px;
+    height: 103px;
+    background-size: contain;
+    animation: cloud5before linear 3s infinite alternate;
+}
+
+@keyframes cloud5before {
+    from {
+        left: 40%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+.cloud__6::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    bottom: 98%;
+    width: 176px;
+    height: 103px;
+    background-size: contain;
+    animation: cloud6after linear 3s infinite alternate;
+    transform: scale(-1,1);
+}
+
+@keyframes cloud6after {
+    from {
+        left: 58%;
+    }
+
+    to {
+        left: 48%;
+    }
+}
+
+.cloud__7::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud1.svg) no-repeat center;
+    bottom: 95%;
+    width: 227px;
+    height: 91px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud7before linear 3s infinite alternate;
+}
+
+@keyframes cloud7before {
+    from {
+        left: 42%;
+    }
+
+    to {
+        left: 32%;
+    }
+}
+
+.cloud__7::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/cloud2.svg) no-repeat center;
+    bottom: 105%;
+    width: 84px;
+    height: 47px;
+    background-size: contain;
+    transform: scale(-1, 1);
+    animation: cloud7after linear 3s infinite alternate;
+}
+
+@keyframes cloud7after {
+    from {
+        left: 23%;
+    }
+
+    to {
+        left: 37%;
+    }
+}
+
+.program__menu {
+    padding: 175px 0 200px 0;
+    position: relative;
+}
+
+.program__menu::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/clearing.svg) no-repeat top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.program__menu__item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 255px;
+    height: 326px !important;
+    padding: 30px 27px 26px 27px;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 22px 30px 0 0;
+    background-color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.program__menu__item:hover {
+    margin: 0 30px 0 0;
+}
+
+body .program__menu .slick-list {
+    padding: 15px;
+}
+
+.program__menu .slider {
+    margin: -15px;
+}
+
+body .slick-next {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    transform: rotate(45deg);
+}
+
+body .slick-prev {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    transform: rotate(45deg);
+}
+
+body .slick-prev:before,
+body .slick-next:before {
+    content: none;
+}
+
+
+body .reviews .slick-next {
+    top: 35%;
+    right: 0;
+}
+
+body .reviews .slick-prev {
+    top: 35%;
+    left: 0;
+}
+
+body .gallery .slick-next,
+body .gallery .slick-prev {
+
+    top: 35%;
+}
+
+body .slick-dots {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+body .reviews .slick-dots li button::before {
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+}
+
+body .gallery .slick-dots li button::before {
+    font-size: 16px;
+    color: #e3e3e3;
+    opacity: 1;
+}
+
+body .slick-dots li.slick-active button::before {
+    color: #565656;
+}
+
+.program__menu__img {
+    height: 100%;
+}
+
+.program__menu__img img {
+    width: 100%;
+}
+
+.program__menu__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    text-align: center;
+}
+
+.program__menu__age {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.age8 {
+    color: #85A75A;
+}
+
+.age11 {
+    color: #54A3A8;
+}
+
+.age12 {
+    color: #E78B6E;
+}
+
+.about-us__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-us__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+
+.about-us__desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.about-us__right {
+    max-width: 541px;
+}
+
+.about-us__left {
+    position: relative;
+}
+
+.about-us__left::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/circle1.svg) no-repeat center;
+    bottom: 30%;
+    right: 40%;
+    width: 369px;
+    height: 308px;
+}
+
+.about-us__left::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/circle2.svg) no-repeat center;
+    top: 75%;
+    left: 80%;
+    width: 145px;
+    height: 111px;
+}
+
+.about-us__img {
+    position: relative;
+    z-index: 2;
+    width: 475px;
+    height: 301px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.about-us {
+    padding: 131px 0 260px 0;
+}
+
+.timetable {
+    padding: 0 0 200px 0;
+}
+
+.timetable__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 150px 0;
+}
+
+.card__gang__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 46px 0;
+    text-align: center;
+}
+
+.flow {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    position: relative;
+}
+
+body .flow.active::before {
+    background: #000000;
+}
+
+.flow::before {
+    position: absolute;
+    display: block;
+    content: '';
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 16px;
+    height: 16px;
+    top: 100%;
+    left: 30%;
+    z-index: 2;
+}
+
+.june .flow::before {
+    background: #A7C688;
+}
+
+.july .flow::before {
+    background: #EEA3B0;
+}
+
+.august .flow::before {
+    background: #FBA286;
+}
+
+.date {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 50px 0;
+}
+
+.card__gang__flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 53px 0;
+    padding: 0 28px;
+}
+
+.card__gang__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timetable__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.timetable__cards::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 980px;
+    height: 2px;
+    background: #000000;
+    top: 156px;
+    left: 64px;
+    z-index: 1;
+}
+
+.card__gang {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 350px;
+    height: 271px;
+    padding: 50px 21px;
+    box-sizing: border-box;
+}
+
+.card__gang.june {
+    background: #A7C688;
+}
+
+.card__gang.july {
+    background: #EEA3B0;
+}
+
+.card__gang.august {
+    background: #FBA286;
+}
+
+.june,
+.july,
+.august {
+    position: relative;
+}
+
+.june::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/icogreen1.svg) no-repeat center;
+    bottom: 92%;
+    left: 24px;
+    width: 50px;
+    height: 107px;
+
+}
+
+.july::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/icopink3.svg) no-repeat center;
+    bottom: 90%;
+    right: 7px;
+    width: 82px;
+    height: 129px;
+
+}
+
+.august::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/icocor2.svg) no-repeat center;
+    bottom: 90%;
+    right: 31px;
+    width: 131px;
+    height: 174px;
+}
+
+.directions {
+    padding: 0 0 200px 0;
+}
+
+.directions__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 245px;
+}
+
+.directions__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 90px 0;
+}
+
+.directions__card__title1 {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    margin: 0 0 14px 0;
+}
+
+.directions__card__info {
+    font-size: 18px;
+    line-height: 22px;
+    color: #343434;
+    margin: 0 0 15px 0;
+    width: 570px;
+    overflow: hidden;
+}
+
+.directions__card__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 51px 0;
+    gap: 15px;
+}
+
+.directions__time__item {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    width: 250px;
+}
+
+.directions__card__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    height: 116px;
+    box-sizing: border-box;
+    padding: 25px 30px 20px 30px;
+    margin: 0 0 15px 0;
+}
+
+.directions__card__title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin: 0 0 14px 0;
+}
+
+.directions__card__clock {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.directions__card.coral::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/coral-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1268px;
+    height: 745px;
+}
+
+.directions__card.purple::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/purple-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1291px;
+    height: 698px;
+}
+
+.directions__card.green::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/green-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1324px;
+    height: 740px;
+}
+
+.directions__card.pink::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/pink-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1334px;
+    height: 793px;
+}
+
+.directions__card.yellow::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/yellow-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1294px;
+    height: 778px;
+}
+
+.directions__card.blue::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/blue-card.svg) no-repeat center;
+    top: -90px;
+    left: -164px;
+    width: 1327px;
+    height: 769px;
+}
+
+.directions__left {
+    position: relative;
+    z-index: 2;
+    padding: 61px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.directions__right {
+    position: relative;
+    z-index: 2;
+}
+
+.directions__card {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 0 0 95px;
+    gap: 95px;
+}
+
+
+.directions__img__wrap {
+    position: relative;
+}
+
+.coral .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-coral-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.purple .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-purple-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.green .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-green-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.pink .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-pink-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.yellow .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-yellow-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.blue .directions__img__wrap::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/card-blue-ico.svg) no-repeat center;
+    width: 202px;
+    height: 202px;
+    bottom: 50%;
+    right: 56%;
+}
+
+.directions__card__price {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.directions__left__img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px rgba(0 0 0 / 10%);
+    object-fit: cover;
+    margin: 0 0;
+}
+
+.directions__card.coral .directions__left__img {
+    background-color: #FBA286;
+}
+
+.directions__card.purple .directions__left__img {
+    background-color: #C6A0DE;
+}
+
+.directions__card.green .directions__left__img {
+    background-color: #9FC57A;
+}
+
+.directions__card.pink .directions__left__img {
+    background-color: #EEA3B0;
+}
+
+.directions__card.yellow .directions__left__img {
+    background-color: #FBCE78;
+}
+
+.directions__card.blue .directions__left__img {
+    background-color: #73D5DC;
+}
+
+.directions__btn {
+    background: #C4C4C4;
+    border-radius: 5px;
+    width: 144px;
+    height: 92px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.directions__btn::before {
+    display: block;
+    position: absolute;
+    content: "\25B6";
+    color: white;
+    font-size: 45px;
+    top: 22%;
+    left: 40%;
+}
+
+.directions__card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+}
+
+.lead__card {
+    padding: 0 0 200px 0;
+}
+
+.lead__card__title {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+
+.lead__card__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    max-width: 264px;
+    position: relative;
+    z-index: 2;
+}
+
+.lead__card__wrap {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 50px 65px;
+    position: relative;
+}
+
+.lead__card__left {
+    max-width: 372px;
+}
+
+.lead__card__right {
+    max-width: 285px;
+}
+
+.lead__card__wrap::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/lead-card-bef.svg) no-repeat center;
+    width: 100%;
+    height: 272px;
+    background-position: bottom;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.lead__card__form__input {
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #7A7A7A;
+    border-radius: 54px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+.lead__card__form__input::placeholder {
+    color: #9d9d9d;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.lead__card__form__wrap {
+    padding: 0 0 149px 0;
+}
+
+.lead__btn {
+    border: none;
+    box-shadow: none;
+    margin: 0 0 15px 0;
+}
+
+.advantage {
+    padding: 0 0 280px 0;
+}
+
+.advantage__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    margin: 0 0 50px 0;
+    color: #000000;
+}
+
+.advantage__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: space-between;
+}
+
+.advantage__content__card {
+    display: flex;
+    gap: 30px;
+}
+
+.advantage__content__card__left {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #FFDC99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage__content__card__left__img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.advantage__content__card__right {
+    max-width: 361px;
+}
+
+.advantage__content__card__right__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+
+.advantage__content__card__right__desc {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.reviews {
+    position: relative;
+}
+
+.reviews::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/rev-card-yellow.svg) no-repeat center;
+    top: -13%;
+    left: 14%;
+    width: 1290px;
+    height: 650px;
+}
+
+
+.reviews__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+}
+
+.reviews__left__img {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    margin: 15px 0;
+}
+
+.reviews__right {
+    max-width: 539px;
+}
+
+.reviews__right__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+
+.reviews__right__desc {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.reviews__btn {
+    position: relative;
+    z-index: 2;
+    width: 220px;
+    height: 50px;
+    padding: 15px 0;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.reviews__slider {
+    position: relative;
+    z-index: 2;
+}
+
+.teachers {
+    padding: 200px 0 200px 0;
+}
+
+.teachers__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 51px 0;
+}
+
+.teachers__slider__top {
+    margin: 0 95px 30px 95px;
+}
+
+.teachers__slider__bottom {
+    padding: 0 95px 0px 95px;
+
+}
+
+body .teachers .teachers__slider__top__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+}
+
+.teacher__slider__title {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+
+.teacher__slider__title__experience {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+
+.teacher__slider__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3C3C3C;
+    max-width: 538px;
+}
+
+.teachers__slider__img {
+    background: #FBCE78;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.teachers__slider__card__img {
+    background: #FBCE78;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 10px 0 14px 0;
+}
+
+body .teachers .teachers__slider__bottom__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 125px;
+    margin: 0 40px;
+}
+
+.teachers__slider__bottom__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0 0 13px 0;
+    text-align: center;
+}
+
+.teachers__slider__bottom__desc {
+    font-size: 15px;
+    line-height: 18px;
+    color: #575757;
+    text-align: center;
+}
+
+.gallery {
+    padding: 0 0 200px 0;
+    position: relative;
+}
+
+.gallery::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/circle1.svg) no-repeat center;
+    top: 0;
+    left: 55%;
+    width: 262px;
+    height: 253px;
+    background-size: contain;
+    transform: rotate(35deg);
+}
+
+.gallery::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url(/school/img/circle2.svg) no-repeat center;
+    top: 45%;
+    left: 31%;
+    width: 155px;
+    height: 130px;
+    background-size: contain;
+}
+
+.gallery__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 50px 0;
+}
+
+.gallery__img {
+    width: 349px;
+    height: 228px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0 30px 0 0;
+}
+
+.gallery__slider {
+    z-index: 1;
+}
+
+.cashback {
+    padding: 0 0 240px 0;
+}
+
+.cashback__card {
+    background: url(/school/img/mir.svg) no-repeat center;
+    padding: 103px 55px 50px 65px;
+}
+
+.cashback__card__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 30px 0;
+}
+
+.cashback__card__pay {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.cashback__card__discont {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 133px 0;
+}
+
+.cashback__card__info {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+
+}
+
+.footer__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin: 0 0 100px 0;
+}
+
+.footer__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__card__info {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 50px 62px 109px 66px;
+    width: 540px;
+    height: 792px;
+    box-sizing: border-box;
+}
+
+.footer__card__info__title {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 0 40px 0;
+}
+
+.footer__card__info__discont {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #9FC57A;
+    border-radius: 42px;
+    padding: 7px 15px;
+    width: 90px;
+    box-sizing: border-box;
+}
+
+.footer__card__info__price {
+    font-family: 'Kosko';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+}
+
+.footer__card__info__old-price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #797979;
+    text-decoration: line-through;
+    margin: 0 0 50px 0;
+}
+
+.footer__card__info__cashback {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    position: relative;
+    margin: 0 0 32px 0;
+}
+
+.footer__card__info__cashback span {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.footer__card__info__tax span {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.footer__card__info__cashback::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/school/img/mir-ico.svg) no-repeat center;
+    right: 29%;
+    top: 5px;
+    width: 65px;
+    height: 19px;
+}
+
+.footer__card__info__tax {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0 0 193px 0;
+}
+
+.footer__card__info__stock {
+    font-family: 'Kosko';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+
+.footer__card__form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 50px 62px 109px 66px;
+    width: 540px;
+    height: 792px;
+    box-sizing: border-box;
+}
+
+.form-group__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 30px 0;
+}
+
+.form__group {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 19px 20px;
+    width: 190px;
+    height: 121px;
+    box-sizing: border-box;
+}
+
+.form__group p {
+    margin: 0 0 7px 0;
+}
+
+.form__group__img {
+    height: 15px;
+}
+
+.direction__group__title {
+    font-size: 15px;
+    line-height: 18px;
+    color: #7A7A7A;
+    margin: 0 0 7px 0;
+}
+
+.direction__group {
+    width: 100%;
+    height: 40px;
+    border-radius: 54px;
+    border: 1px solid #7A7A7A;
+    margin: 0 0 30px 0;
+    padding: 9px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.form-group__lead__form__info {
+    font-size: 15px;
+    line-height: 18px;
+    color: #7c7c7c;
+    width: 100%;
+}
+
+.form-group__lead__form__info a {
+    color: #7c7c7c;
+}
+
+.form-group__day__wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 43px 0;
+}
+
+.form-group__day {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.form-group__lead__form__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 50px 0;
+}
+
+.form-group__lead__form__input {
+    width: 191px;
+    height: 50px;
+    padding: 15px 30px;
+    font-size: 15px;
+    line-height: 18px;
+    box-sizing: border-box;
+    border-radius: 54px;
+    border: 1px solid #7A7A7A;
+}
+
+.form-group__lead__form__input.w100 {
+    width: 100%;
+}
+
+.direction__group.last {
+    width: 200px;
+}
+
+footer {
+    position: relative;
+    padding: 65px 0 0 0;
+}
+
+footer::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background: url(/school/img/footer.svg) no-repeat center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1162px;
+}
+
+.success {
+    padding: 218px 149px;
+    background: url(/school/img/suc.svg) no-repeat center;
+    background-color: white;
+}
+
+.success > * {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal.none {
+    display: none;
+}
+
+.modal .content {
+    width: 540px;
+    height: 505px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 50px 65px;
+    box-sizing: border-box;
+}
+
+.modal__name {
+    width: 100%;
+    height: 50px;
+    padding: 15px 55px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0 0 10px 0;
+    border-radius: 20px;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+}
+
+.modal__name__wrap {
+    position: relative;
+}
+
+.modal__name__wrap::before {
+    content: "от";
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+
+.modal__reviews {
+    border-radius: 20px;
+    width: 100%;
+    height: 209px;
+    padding: 18px 30px;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #979797;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+}
+
+.file_upload{
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;        
+    height: 2em;           
+    line-height: 2em;
+    margin: 0 0 52px 0;
+
+}
+
+.file_upload > button{
+    float: right;
+    width: 143px;            
+    height: 100%;
+}
+
+.file_upload > div{
+    font-size: 15px;
+    line-height: 18px;
+    color: #9a9a9a;
+}
+
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     
+    -ms-transform: scale(20);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file_upload > button{
+    border: none;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5f5f5f;
+    background: none;
+    padding: 0;
+    position: relative;
+}
+
+.file_upload > button::before {
+    display: block;
+    content: '+';
+    position: absolute;
+    left: -20px;
+    font-size: 30px;
+    color: #5f5f5f;
+}
+
+
+.modal__btn {
+    width: 216px;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+.read__btn {
+    margin: 0 0 51px 0;
+    color: #737373;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+    display: block;
+}
